@@ -1,0 +1,45 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+}
+  
+/* Clear fix hack */
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+  
+.clear {
+    clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+/* 
+1 - HTML set font-size 
+2 - Body set font-family 
+*/
+Html {
+    font-size: 62.5%;
+}
+
+Body {
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/******************************************
+/* HEADER
+/*******************************************/
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
