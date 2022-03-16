@@ -23,6 +23,7 @@
 /* 
 1 - HTML set font-size 
 2 - Body set font-family 
+3 - Body set background color and font color 
 */
 Html {
     font-size: 62.5%;
@@ -30,6 +31,8 @@ Html {
 
 Body {
   font-family: 'Roboto', 'Helvetica', sans-serif;
+  background: #333;
+  color: #fff;
 }
 
 /******************************************
@@ -39,7 +42,29 @@ Body {
 /******************************************
 /* HEADER
 /*******************************************/
-
+/*
+4 Header h1 centered
+5 Header a removed underline, changed color, added hover color
+*/
+Body > Div > #Header > h1 {
+    text-align: center;
+}
+Body > Div > #Header a {
+    text-decoration: none;
+    color: #fff;
+}
+Body > Div > #Header a:hover {
+    color: #999;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+/* Body {
+    border: 8px solid red;
+}
+Body > Div {
+    border: 4px solid green;
+}
+Body > Div > #Header {
+    border: 4px solid gold; */
