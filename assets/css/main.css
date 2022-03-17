@@ -31,7 +31,7 @@ Html {
 
 Body {
   font-family: 'Roboto', 'Helvetica', sans-serif;
-  background: #333;
+  background: #999;
   color: #fff;
 }
 
@@ -56,6 +56,98 @@ Body > Div > #Header a {
 Body > Div > #Header a:hover {
     color: #999;
 }
+/* Body > Div > #Header > Nav {
+    background-color: #d7d7d7;
+} */
+/* Body > Div > #Header > Nav > ul {
+    margin: 0;  
+} */
+
+/* Hamburger menu START
+
+/* Home-Button
+6 Created home-button and home-button-burger class in html 
+7 Created borders around home-button & home-button-burger for visualization
+    18 Borders removed
+8 Decreased width & height on home-button to create a square border
+9a .Home-button will be my container for .home-button-burger, 
+9b Display flex, .home-button-burger became a vertical line, from a horizontal line
+9c Justify-content center, vertical line moved to center of square
+9c align-items center, vertical line shrunk to a single square pixel
+
+/* Home-Button-Burger
+10 Increased width & height, square pixel expanded into rectangle
+11 Border-radius to round the edges of rectangle
+12 Background set to fill in rectangle-border. Creates a solid-rounded rectangle-bar
+    19 Cursor set to pointer
+*/
+Body > Div > #Header > .home-button {
+    width: 8em;
+    height: 8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+    cursor: pointer;
+    /* transition: all .5s ease-in-out; */
+}
+
+Body > Div > #Header > .home-button > .home-button-burger {
+    width: 4.5em;
+    height: 0.65em;
+    border-radius: 0.5em;
+    background: crimson;
+    /* box-shadow: 0 0.2em, 0.5em rgba(255,101,47,.2); */
+    /* transition: all .5s ease-in-out; */
+}
+
+/* Hamburger menu CONTINUE
+
+/* Home-Button-Burger::before-START
+13 Cloned steps 10~12 while targetting ::before
+14 Position set to absolute, this creates a second solid-rounded rectangle-bar
+15 Transform translate moves second bar above the first bar, and slightly left (x / y)
+/* Home-Button-Burger::before-END
+
+/* Home-Button-Burger::after-START
+16 Cloned steps 10~12 while targetting ::after
+17 Cloned steps 14~15, but translate moves third bar below the first bar.
+/* Home-Button-Burger::after-END
+
+/* Hamburger menu CONTINUE
+18 JUMPBACK to Body > Div > #Header > .home-button - Removed borders from step 7
+19 JUMPBACK to Body > Div > #Header > .home-button - Cursor set to pointer
+20 Adding Home-button & home-button-burger functionality in JS
+
+TODO: Animate menu
+
+/* Hamburger menu END
+*/
+Body > Div > #Header > .home-button > .home-button-burger::before {
+    /* content: 'hello world'; */
+    content: '';
+    width: 4.5em;
+    height: 0.65em;
+    background: rgb(72, 149, 72);
+    border-radius: 0.5em;
+    /* box-shadow: 0 0.2em, 0.5em rgba(255,101,47,.2); */
+    /* transition: all .5s ease-in-out; */
+    position: absolute;
+    transform: translate(0, -1.6em);
+
+}
+Body > Div > #Header > .home-button > .home-button-burger::after {
+    content: '';
+    width: 4.5em;
+    height: 0.65em;
+    background: dodgerblue;
+    border-radius: 0.5em;
+    /* box-shadow: 0 0.2em, 0.5em rgba(255,101,47,.2); */
+    /* transition: all .5s ease-in-out; */
+    position: absolute;
+    transform: translate(0, 1.6em);
+
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
@@ -65,6 +157,16 @@ Body > Div > #Header a:hover {
 }
 Body > Div {
     border: 4px solid green;
+} */
+/* Body > Div > #Header {
+    border: 4px solid gold;
+} */
+/* Body > Div > #Header > Nav {
+    border: 2px solid fuchsia;
+} */
+Body > Div > #Header > .home-button {
+    border: 2px solid green;
 }
-Body > Div > #Header {
-    border: 4px solid gold; */
+Body > Div > #Header > .home-button > .home-button-burger {
+    /* border: 2px solid white; */
+}
